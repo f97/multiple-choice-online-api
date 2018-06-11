@@ -18,7 +18,6 @@ https.get(options, function (res) {
                 var data = JSON.parse(json);
                 // data is available here:
                 console.log(data);
-                console.log(data.html_url);
             } catch (e) {
                 console.log('Error parsing JSON!');
             }
