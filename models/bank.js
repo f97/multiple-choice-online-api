@@ -20,7 +20,7 @@ var bankSchema = new Schema ({
 
 const Bank = mongoose.model('Bank', bankSchema);
 autoIncrement.initialize(mongoose.connection);
-bankSchema.plugin(autoIncrement.plugin, { model: 'Bank', field: 'qbID' });
+bankSchema.plugin(autoIncrement.plugin, { model: 'Bank', field: 'qbID',startAt: 0 });
 
 module.exports = {
     Bank

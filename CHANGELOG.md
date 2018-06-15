@@ -22,7 +22,10 @@
 - Big update follow teacher.. :))
 - Update auto create radom question with bank question
 - Update document.
-### [0.3.0 - 0.3.3] - 2018-05-16
+### [0.3.0 - 0.3.3] - 2018-06-10
 - Fix bug cross domain (Hồng Ly)
 - ID ( string to integer )
 - Update document.
+### [0.3.4] - 2018-06-15
+- Fix mongoose-auto-increment
+- Optimal code and data.

@@ -24,7 +24,7 @@ var groupSchema = new Schema ({
 
 const Group = mongoose.model('Group', groupSchema);
 autoIncrement.initialize(mongoose.connection);
-groupSchema.plugin(autoIncrement.plugin, { model: 'Group', field: 'qgID' });
+groupSchema.plugin(autoIncrement.plugin, { model: 'Group', field: 'qgID',startAt: 0 });
 
 module.exports = {
     Group

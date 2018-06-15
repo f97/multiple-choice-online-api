@@ -33,7 +33,7 @@ var examSchema = new Schema ({
 
 const Exam = mongoose.model('Exam', examSchema);
 autoIncrement.initialize(mongoose.connection);
-examSchema.plugin(autoIncrement.plugin, { model: 'Exam', field: 'eID' });
+examSchema.plugin(autoIncrement.plugin, { model: 'Exam', field: 'eID',startAt: 0 });
 
 module.exports = {
     Exam

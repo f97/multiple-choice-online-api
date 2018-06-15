@@ -22,7 +22,7 @@ var examQuestionSchema = new Schema ({
 
 const ExamQuestion = mongoose.model('ExamQuestion', examQuestionSchema);
 autoIncrement.initialize(mongoose.connection);
-examQuestionSchema.plugin(autoIncrement.plugin, { model: 'ExamQuestion', field: 'eqID' });
+examQuestionSchema.plugin(autoIncrement.plugin, { model: 'ExamQuestion', field: 'eqID',startAt: 0 });
 
 module.exports = {
     ExamQuestion

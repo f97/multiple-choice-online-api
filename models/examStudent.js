@@ -26,7 +26,7 @@ var examStudentSchema = new Schema({
 
 const ExamStudent = mongoose.model('ExamStudent', examStudentSchema);
 autoIncrement.initialize(mongoose.connection);
-examStudentSchema.plugin(autoIncrement.plugin, { model: 'ExamStudent', field: 'esID' });
+examStudentSchema.plugin(autoIncrement.plugin, { model: 'ExamStudent', field: 'esID',startAt: 0 });
 
 module.exports = {
     ExamStudent

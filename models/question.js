@@ -25,7 +25,7 @@ var questionSchema = new Schema ({
 
 const Question = mongoose.model('Question', questionSchema);
 autoIncrement.initialize(mongoose.connection);
-questionSchema.plugin(autoIncrement.plugin, { model: 'Question', field: 'qID' });
+questionSchema.plugin(autoIncrement.plugin, { model: 'Question', field: 'qID',startAt: 0 });
 
 module.exports = {
     Question
