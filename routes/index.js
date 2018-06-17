@@ -382,11 +382,10 @@ app.get('/student', (req, res) => {
 
 app.post('/student', (req, res) => {
     var examStudent = new ExamStudent({
-        esID: req.body.esID,
         eID: req.body.eID,
         userID: req.body.userID,
-        status: req.body.status,
         mark: req.body.mark,
+        numberQuestion: req.body.numberQuestion,
     });
     examStudent.save().then((examStudent) => {
       res.send(examStudent);
@@ -395,6 +394,16 @@ app.post('/student', (req, res) => {
     });
 });
 
+app.get('/student/:userID', (req, res) => {
+  var query = { userID: req.params.userID };
+
+  ExamStudent.find(query).then((examStudent) => {
+    res.send(examStudent);
+  }, (e) => {
+    res.status(404).send('Student not found');
+  });
+
+});
 //endregion
 
 //region student route

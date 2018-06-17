@@ -29,3 +29,5 @@
 ### [0.3.4] - 2018-06-15
 - Fix mongoose-auto-increment
 - Optimal code and data.
+### [0.3.5] - 2018-06-17
+- Fix bug ExamStudent post
