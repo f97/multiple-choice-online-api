@@ -395,15 +395,13 @@ app.post('/student', (req, res) => {
 });
 
 app.get('/student/:userID', (req, res) => {
-  var query = { userID: req.params.userID };
-
-  ExamStudent.find(query).then((examStudent) => {
-    res.send(examStudent);
+  ExamStudent.find({userID: req.params.userID}).then((examStudent) => {
+    res.send({examStudent});
   }, (e) => {
-    res.status(404).send('Student not found');
+    res.status(400).send(e);
   });
-
 });
+
 //endregion
 
 //region student route
@@ -479,15 +477,13 @@ app.post('/studentdetail', (req, res) => {
 //   res.send('Add success...');
 // });
 app.get('/studentdetail/:userID', (req, res) => {
-  var query = { userID: req.params.userID };
-
-  ExamStudentDetail.find(query).then((examStudentDetail) => {
-    res.send(examStudentDetail);
+  ExamStudentDetail.find({userID: req.params.userID}).then((examStudentDetail) => {
+    res.send({examStudentDetail});
   }, (e) => {
-    res.status(404).send('Question not found');
+    res.status(400).send(e);
   });
-
 });
+
 //endregion
 
 

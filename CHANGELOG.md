@@ -31,3 +31,5 @@
 - Optimal code and data.
 ### [0.3.5] - 2018-06-17
 - Fix bug ExamStudent post
+### [0.3.6] - 2018-06-17
+- Fix ExamStudent res array name

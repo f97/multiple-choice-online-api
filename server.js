@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 app.listen(PORT, () => console.log(`Listening on localhost:${ PORT }`))
 
 app.get('/', (req, res) => {
-    res.send('Version 0.3.5')
+    res.send('Version 0.3.6')
 })
 
 // Add headers

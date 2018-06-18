@@ -6,7 +6,7 @@ Backend using RESTful JSON api using Nodejs, Express and MongoDB
 ![Document version](https://img.shields.io/badge/docs%20version-v0.3.0-blue.svg)
 ![Project version](https://img.shields.io/badge/project%20version-v0.3.0-blue.svg)
 ![Build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![Goal progress](https://img.shields.io/badge/goal%20progress%3A-72%25-brightgreen.svg)
+![Goal progress](https://img.shields.io/badge/goal%20progress%3A-86%25-brightgreen.svg)
 
 ## API Document vs swagger
 Project use swagger to write document API. 
