@@ -1,3 +1,5 @@
+'use strict';
+
 const db = require('./utils/db');
 const app = require('./routes');
 const PORT = process.env.PORT || 5000
