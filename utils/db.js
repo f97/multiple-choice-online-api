@@ -2,8 +2,7 @@
 
 var mongoose = require('mongoose');
 
-const mlabURI = 'mongodb://huynhduckhoan:huynhduckhoan@ds143907.mlab.com:43907/multiple-choice-online'
-const dbName = 'multiple-choice-online';
+const mlabURI = 'mongodb://f97:f97@nhom9-shard-00-00-z5b08.gcp.mongodb.net:27017,nhom9-shard-00-01-z5b08.gcp.mongodb.net:27017,nhom9-shard-00-02-z5b08.gcp.mongodb.net:27017/nhom9?ssl=true&replicaSet=Nhom9-shard-0&authSource=admin&retryWrites=true'
 
 const con = mongoose.connect(mlabURI, (error) => {
 	if(error){
