@@ -9,7 +9,7 @@ myApp.controller('myCtrl', function ($scope, $http) {
     $scope.getAllStudent = function () {
         $http({
             mehtod: "GET",
-            url: 'https://nhom-9.appspot.com/user'
+            url: 'https://dtnhom9.appspot.com/user'
         }).then(
                 function (response) {
 
@@ -31,7 +31,7 @@ myApp.controller('myCtrl', function ($scope, $http) {
     $scope.saveStudent = function () {
         $http({
             method: 'POST',
-            url: 'https://nhom-9.appspot.com/user',
+            url: 'https://dtnhom9.appspot.com/user',
             data: angular.toJson($scope.newStudent),
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ myApp.controller('myCtrl', function ($scope, $http) {
     $scope.updateStudent = function () {
         $http({
             method: 'PUT',
-            url: 'https://nhom-9.appspot.com/user/'+$scope.clickStudent.userID,
+            url: 'https://dtnhom9.appspot.com/user/'+$scope.clickStudent.userID,
             data: angular.toJson($scope.clickStudent),
             headers: {
                 'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ myApp.controller('myCtrl', function ($scope, $http) {
     $scope.deleteStudent = function () {
         $http({
             method: 'DELETE',
-            url: 'https://nhom-9.appspot.com/user/' + $scope.clickStudent.userID
+            url: 'https://dtnhom9.appspot.com/user/' + $scope.clickStudent.userID
         }).then(
                 function (response) {
                     $scope.message = "student deleted Successfully";

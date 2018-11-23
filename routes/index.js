@@ -16,6 +16,17 @@ const {ExamQuestion} = require('../models/examQuestion');
 const {ExamStudent} = require('../models/examStudent');
 const {ExamStudentDetail} = require('../models/examStudentDetail');
 
+// Add headers
+app.use(function (req, res, next) {
+
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader('Access-Control-Allow-Headers', '*');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+
+  next();
+});
+
 app.use(bodyParser.json())
 
 //region user route

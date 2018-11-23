@@ -25,7 +25,8 @@
     "express": "^4.16.3",
     "lodash": "^4.17.10",
     "mongoose": "^5.0.18",
-    "mongoose-auto-increment": "^5.0.1"
+    "mongoose-auto-increment": "^5.0.1",
+    "cor": "*"
   },
   "devDependencies": {
     "nodemon": "^1.17.4"
